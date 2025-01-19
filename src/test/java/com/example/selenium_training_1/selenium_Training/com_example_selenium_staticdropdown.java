@@ -12,7 +12,9 @@ public class com_example_selenium_staticdropdown {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Rajiv Deshpande\\Documents\\selenium_Training\\selenium_Training\\driver\\chromedriver-win64\\chromedriver.exe");
+		String ProjectPath=System.getProperty("user.dir");
+		String chromeDriverPath=ProjectPath+"\\driver\\chromedriver-win64\\chromedriver.exe";
+		System.setProperty("webdriver.chrome.driver", chromeDriverPath);
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.icicibank.com/personal-banking/accounts/savings-account");
 		//driver.get("https://rahulshettyacademy.com/AutomationPractice/");
