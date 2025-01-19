@@ -1,6 +1,5 @@
 package com.example.selenium_training_1.selenium_Training;
 
-import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -24,23 +23,23 @@ public class com_example_selenium_staticdropdown {
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		
 		WebElement drop =  driver.findElement(By.id("dropdown-class-example"));
-		
+
 		Select selectfromdropdown = new Select(drop);
 		selectfromdropdown.selectByIndex(2);
-		
+
 //        driver.findElement(By.xpath("//li//div//a[@class = 'menu-nav-tablink']//span[text() ='Deposits']"));
-// 
+//
 //        List<WebElement> menu =   driver.findElements(By.xpath("//ul[@class='mega-menu-items']//div[@class='menu-nav-tab']//span[@class = 'menu-txt']"));
-//		
+//
 //        WebElement topmenu;
-//        
+//
 //        for(int i=0;i<menu.size();i++) {
 //        	topmenu= menu.get(i);
 //        	System.out.println(topmenu.getText());
 //        }
 
- 
-	
+
+
 		
 	}
 
