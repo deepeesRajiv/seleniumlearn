@@ -16,6 +16,8 @@ public class com_example_selenium_calender {
 		String chromeDriverPath=ProjectPath+"\\driver\\chromedriver-win64\\chromedriver.exe";
 		System.setProperty("webdriver.chrome.driver", chromeDriverPath);
 		WebDriver driver = new ChromeDriver();
+
+		driver.getCurrentUrl();
 		
 		driver.get("https://www.ixigo.com/");
 				//driver.manage().window().maximize();
